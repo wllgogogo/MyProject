@@ -1,0 +1,570 @@
+ @charset 'utf-8';
+
+ .h .h-nav a{
+ /*  display:inline-block; */
+ text-decoration:none;
+ /*  margin-right:5px; */
+ color:#999;
+ line-height:30px;
+ vertical-align:middle;
+ }
+
+ body{
+ height:6000px;
+ }
+
+.h .h-nav a:hover{
+color:#ff0036;
+}
+
+.header{
+height:163px;
+/* background-color:pink; */
+}
+
+/* 头部内容 */
+.h{
+width:100%;
+height:31px;
+background-color:#f2f2f2;
+border:1px solid #e5e5e5;
+}
+/* 头部导航 */
+.h .h-nav{
+width:1230px;
+height:32px;
+margin:0 auto;
+z-index:1;
+background-color:#f2f2f2;
+}
+/* 头部导航左边盒子 */
+.h .h-nav .h-nav-l{
+width:200px;
+height:30px;
+font-size:12px;
+/* background-color:pink; */
+}
+/* 头部导航左边盒子b标签 */
+.h .h-nav .h-nav-l b{
+list-style:none;
+line-height:30px;
+color:#999;
+vertical-align:middle;
+}
+/* 头部导航左边盒子a标签 */
+.h .h-nav .h-nav-l a{
+margin-left:10px;
+}
+
+/* 头部导航右边大盒子 */
+.h .h-nav .h-nav-r{
+position:relative;
+z-index:1;
+width:570px;
+height:30px;
+/* background-color:blue; */
+}
+/* 头部导航右边小盒子 */
+.h .h-nav .h-nav-r div{
+width:70px;
+height:30px;
+}
+/* 头部导航右边我的淘宝盒子 */
+.h .h-nav .h-nav-r div.mytaobao{
+text-align:center;
+}
+/* 头部导航右边我的淘宝 盒子下a标签后面伪元素三角形 */
+.h .h-nav .h-nav-r div.on>a:after{
+position:absolute;
+content:'';
+top:13px;
+margin-left:4px;
+border:4px solid transparent;
+border-bottom:none;
+border-top:4px solid #b6b6b6;
+transition:.1s;
+}
+/* 头部导航右边我的淘宝盒子 hover */
+.h .h-nav .h-nav-r div.mytaobao:hover{
+background-color:#FFF;
+}
+/* 选中头部导航右边我的淘宝盒子 hover三角形旋转180deg */
+.h .h-nav .h-nav-r div.mytaobao:hover a::after{
+transform:rotate(180deg);
+}
+/* 选中头部导航右边我的淘宝盒子 hover ul可见 */
+.h .h-nav .h-nav-r div.mytaobao:hover ul{
+display:block;
+}
+/* 选中头部导航右边我的淘宝盒子下子代a标签 hover出现下划线 */
+.h .h-nav .h-nav-r div.mytaobao> a:hover{
+color:red;
+text-decoration:underline;
+}
+/* 选中头部导航右边我的淘宝盒子下ul后代的a标签 hover出现下划线 */
+.h .h-nav .h-nav-r div.mytaobao ul a:hover{
+text-decoration:underline;
+}
+/* 选中头部导航右边我的淘宝盒子下ul 隐藏*/
+.h .h-nav .h-nav-r .mytaobao ul{
+display:none;
+position:absolute;
+top:30px;
+left:0;
+width:120px;
+height:60px;
+z-index:-1;
+background-color:#fff;
+box-shadow:0 0 5px 0 #ccc;
+}
+/* mytaobao盒子 结束 */
+
+
+
+/* 选中头部导航右边购物车盒子*/
+.h .h-nav .h-nav-r .shopcar{
+padding-left:10px;
+width:80px;
+}
+
+.h .h-nav .h-nav-r .shopcar i{
+color:red;
+line-height:30px;
+font-size:14px;
+}
+
+.h .h-nav .h-nav-r .shopcar a{
+display:inline;
+color:#999;
+line-height:30px;
+font-size:12px;
+}
+
+.h .h-nav .h-nav-r .shopcar a:hover{
+color:red;
+}
+
+.h .h-nav .h-nav-r .shopcar a span{
+font-size:13px;
+font-weight:600;
+}
+
+/* 头部导航收藏夹盒子 */
+.h .h-nav .h-nav-r .favorite>a:hover{
+color:red;
+text-decoration:underline;
+}
+
+.h .h-nav .h-nav-r .favorite{
+position:relative;
+text-align:center;
+}
+
+.h .h-nav .h-nav-r div.favorite:hover{
+background-color:#FFF;
+}
+
+.h .h-nav .h-nav-r div.favorite:hover a::after{
+transform:rotate(180deg);
+}
+.h .h-nav .h-nav-r div.favorite:hover ul{
+display:block;
+}
+
+.h .h-nav .h-nav-r div.favorite ul>li:hover{
+text-decoration:underline;
+}
+
+.h .h-nav .h-nav-r .favorite ul{
+display:none;
+position:absolute;
+top:30px;
+left:0;
+width:120px;
+height:60px;
+z-index:-1;
+background-color:#fff;
+box-shadow:0 0 5px 0 #ccc;
+}
+
+/* 头部导航手机版盒子 */
+.h .h-nav .h-nav-r .phone{
+position:relative;
+width:80px;
+padding-left:15px;
+}
+
+.h .h-nav .h-nav-r .phone i{
+    color: red;
+    font-size: 14px;
+	padding-left:12px;
+	border-left:1px solid #ccc;
+}
+
+.h .h-nav .h-nav-r .phone .qr-code{
+display:none;
+position:absolute;
+top:30px;
+left:0;
+width:150px;
+height:190px;
+padding:15px;
+z-index:-1;
+background:url('../images/2.png') no-repeat 0 0/180px 210px;
+background-color:#fff;
+box-shadow:0 0 5px 0 #ccc;
+}
+
+.h .h-nav .h-nav-r .phone>a:after{
+display:none;
+position:absolute;
+content:'';
+top:24px;
+left:40px;
+border:6px solid transparent;
+border-top:none;
+border-bottom:7px solid #fff;
+}
+
+.h .h-nav .h-nav-r .phone:hover .qr-code{
+display:block;
+}
+
+.h .h-nav .h-nav-r .phone:hover a:after{
+display:block;
+}
+
+/* 手机版盒子结束 */
+
+.h .h-nav .h-nav-r .tb-web{
+width:50px;
+}
+
+/* 淘宝网结束 */
+
+.h .h-nav .h-nav-r div.support{
+position:relative;
+
+margin-right:5px;
+}
+
+.h .h-nav .h-nav-r div.support:hover{
+background-color:#fff;
+}
+
+.h .h-nav .h-nav-r div.support:hover .seller{
+display:block;
+}
+.h .h-nav .h-nav-r div.support>a:hover{
+color:red;
+text-decoration:underline;
+}
+
+.h .h-nav .h-nav-r div.support:hover a:after{
+transform:rotate(180deg);
+}
+
+.h .h-nav .h-nav-r div.support .seller{
+display:none;
+position:absolute;
+top:30px;
+right:0px;
+z-index:-1;
+width:130px;
+height:200px;
+padding:10px 10px 0;
+background-color:#FFF;
+box-shadow:0 0 5px #ccc;
+}
+
+.h .h-nav .h-nav-r div.support .seller h3{
+/* text-indent:10px; */
+color:#666;
+font-weight:700;
+}
+
+.h .h-nav .h-nav-r div.support .seller .list{
+    width: 130px;
+	margin-bottom:10px;
+	border-bottom:1px dotted #827777;
+}
+
+.h .h-nav .h-nav-r div.support .seller .list li{
+    display: inline-block;
+    width: 50px;
+    line-height: 25px;
+}
+
+.h .h-nav .h-nav-r div.support .seller .list li:nth-child(odd){
+margin-right:25px;
+}
+
+
+.h-nav .h-nav-r div.support .seller .list li:hover{
+text-decoration:underline;
+}
+
+
+.h .h-nav .h-nav-r div.web-nav{
+position:relative;
+text-align:center;
+width:90px;
+}
+
+.h .h-nav .h-nav-r div.web-nav:hover{
+border-bottom:2px solid #fff;
+background-color:#fff;
+}
+
+.h .h-nav .h-nav-r div.web-nav:hover a::after{
+transform:rotate(180deg);
+}
+
+.h .h-nav .h-nav-r div.web-nav:hover .list{
+display:block;
+}
+
+.h .h-nav .h-nav-r div.web-nav i{
+font-size:14px;
+line-height:30px;
+color:red;
+margin-right:5px;
+}
+.h .h-nav .h-nav-r div.web-nav a{
+display:block;
+width:80px;
+height:30px;
+}
+
+.h .h-nav .h-nav-r div.web-nav a:hover{
+color:#999;
+}
+
+/* .h .h-nav .h-nav-r div.web-nav a span{
+display:block;
+width:60px;
+margin:0 1px;
+} */
+
+.h .h-nav .h-nav-r div.web-nav .list{
+display:none;
+position:absolute;
+top:30px;
+right:0;
+width:1200px;
+height:120px;
+padding:30px 0 10px 0;
+background-color:#fff;
+border:solid #ccc;
+border-width:0 1px 1px 1px;
+}
+
+/* 热点盒子 */
+.h-nav-r div.web-nav .list .hot{
+width:500px;
+height:120px;
+border-right:1px solid #eee;
+/* padding-left:30px; */
+/* background-color:red; */
+}
+/* 热点盒子h2标签（共有属性） */
+.h-nav-r div.web-nav .list .hot h2{ 
+  width:470px;
+  padding-left:40px;
+  line-height:30px;
+  /*  height: 30px; */
+  text-align:left;
+  color: #f56a00;
+  font-size: 16px;
+  font-weight: 100;
+}
+/* 热点盒子h2下span标签（共有属性） */
+.h-nav-r div.web-nav .list h2>span{
+
+ padding-left:10px;
+}
+/* 热点盒子下ul */
+.h-nav-r div.web-nav .list .hot .hotspot{
+width:100%;
+height:90px;
+
+}
+
+/* 热点盒子下ul的li */
+.h-nav-r div.web-nav .list .hot .hotspot li{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+}
+
+/* 热点盒子下ul的li里面的a标签 */
+.h-nav-r div.web-nav .list .hot .hotspot li a:hover{
+color:#f56a00;
+text-decoration:underline;
+}
+
+
+/* 市场盒子 */
+.h-nav-r div.web-nav .list .mark{
+width:500px;
+height:120px;
+border-right:1px solid #eee;
+/* padding-left:30px; */
+/* background-color:yellow; */
+}
+
+.h-nav-r div.web-nav .list .mark h2{ 
+  width:470px;
+  padding-left:40px;
+  line-height:30px;
+  /*  height: 30px; */
+  text-align:left;
+  color: #2263d4;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* 市场盒子下ul */
+.h-nav-r div.web-nav .list .mark .market{
+width:100%;
+height:90px;
+
+}
+
+/* 市场盒子下ul的li */
+.h-nav-r div.web-nav .list .mark .market li{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+}
+
+/* 市场盒子下ul的li里面的a标签 */
+.h-nav-r div.web-nav .list .mark .market li a:hover{
+color:#2263d4;;
+text-decoration:underline;
+}
+
+
+/* 服务指南盒子 */
+.h-nav-r div.web-nav .list .help{
+width:195px;
+height:120px;
+/* padding-left:30px; */
+/* background-color:blue; */
+}
+
+.h-nav-r div.web-nav .list .help h2{ 
+  width:120px;
+  padding-left:30px;
+  line-height:30px;
+  /*  height: 30px; */
+  text-align:left;
+  color: #666;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* ul */
+.h-nav-r div.web-nav .list .help .guide{
+width:100%;
+height:90px;
+}
+
+/* 服务指南盒子下ul的li */
+.h-nav-r div.web-nav .list .help .guide li{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+}
+
+/* 服务指南盒子下ul的li里面的a标签 */
+.h-nav-r div.web-nav .list .help .guide li a:hover{
+color:#666;
+text-decoration:underline;
+}
+
+
+/* 头部导航结束 */
+
+/* 头部搜索开始 */
+.h .h-con{
+position:relative;
+width:1230px;
+height:130px;
+margin:0 auto;
+/* background-color:gray; */
+}
+
+.h .h-con h1>img{
+position:absolute;
+left:-50px;
+/* top:0; */
+}
+
+.h .h-con .search{
+position:relative;
+left:320px;
+top:15px;
+width:630px;
+height:70px;
+/* background-color:green; */
+}
+
+.h .h-con .search input[type=text]{
+width:490px;
+height:30px;
+border:2px solid #ff0036;
+vertical-align:top;
+}
+
+.h .h-con .search input[type=submit]{
+width:130px;
+height:36px;
+color:#fff;
+letter-spacing:10px;
+text-align:center;
+font-size:18px;
+font-weight:700;
+background-color:#ff0036;
+border:2px solid #ff0036;
+vertical-align:top;
+}
+
+
+
+input:focus::-webkit-input-placeholder { 
+ /* WebKit browsers */ 
+color: #ddd; 
+}
+
+.h .h-con .search ul{
+width:600px;
+height:30px;
+/* background-color:orange; */
+}
+
+.h .h-con .search ul li{
+float:left;
+/* padding:0 5px; */
+/* border-right:1px solid #999; */
+}
+a{
+color:#999;
+}
+
+.h .h-con .search ul li>a{
+text-decoration:none;
+font-size:14px;
+font-weight:200;
+line-height:30px;
+padding-right:12px;
+margin-right:12px;
+border-right:1px solid #ccc;
+}
+.h .h-con .search ul li:last-child >a{
+border-right:none;
+}
+
+.on-red{
+color:#e54077 !important;
+}

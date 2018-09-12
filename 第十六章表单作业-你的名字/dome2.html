@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+ <head> <!--用户是看不到的，给浏览器看的 -->
+  <meta charset="UTF-8"> <!--国际编码，字符的编码格式 -->
+  <!--网页三要素 title keywords description -->
+  <title>我是标题</title> <!--网页的标题 -->
+  <meta name="Keywords" content=""> <!--让搜索引擎找到我们的页面 -->
+  <meta name="Description" content=""> <!--网页的介绍 -->
+  <style type="text/css">
+  *{
+  margin:0;
+  padding:0;
+  }
+
+  .box{
+  position:relative;
+  width:100%;
+  height:500px;
+  background-image:url('images/ad2500x600.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:-400px 0;
+  margin:50px auto 0;
+  }
+
+  .box .login{
+  position:absolute;
+  right:10%;
+  top:20%;
+  width:240px;
+  height:260px;
+  padding:30px;
+  background:#fff url('images/2wm1.gif') no-repeat right top/40px;
+  }
+
+  .box form{
+  height:200px;
+  }
+
+  .box form input{
+  width:230px;
+  height:30px;
+  margin-top:30px;
+  }
+
+  .box form input:nth-child(-n+2){
+  text-indent:30px;
+   border:2px solid #ccc;
+  }
+
+  .box form input[type=text]{
+  background:url('images/acc.gif') no-repeat,linear-gradient(#ddd 0%,#ddd 100%) no-repeat;
+  background-size:18px 22px,30px 32px;
+  background-position:5px 5px,0 0;
+  }
+
+    .box form input[type=password]{
+  background:url('images/pwd.gif') no-repeat,linear-gradient(#ddd 0%,#ddd 100%) no-repeat;
+  background-size:18px 22px,30px 32px;
+  background-position:5px 5px,0 0;
+  }
+
+  .box form input:nth-child(3){
+  background:#f60;
+  color:#fff;
+  font-size:20px;
+  margin-bottom:30px;
+  outline:none;
+  border:none;
+  }
+
+  .box form input[type=image]{
+  width:17px;
+  height:17px;
+  outline:none;
+  border:none;
+  margin:0;
+  margin-right:5px;
+  vertical-align:middle;
+  }
+  .box form input[type=image]+label{
+    margin-right:20px;
+    font-size:14px;
+	vertical-align:middle;
+  }
+
+
+  </style>
+ </head>
+ <body>
+  <div class="box">
+     <div class='login'>
+	 <h3>密码登录</h3>
+	 <form action="">
+	 <input type="text" placeholder="会员/用户名/手机号">
+	 <input type="password">
+	 <input type="submit" href="#">
+	 <input type="image" src='images/wb.gif' id='wb'><label for="wb">微博登录</label>
+	 <input type="image" src='images/zfb.gif' id='zfb'><label for="zfb">支付宝登录</label>
+
+	 </form>
+
+	 </div>
+  </div>
+ </body>
+</html>

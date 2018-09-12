@@ -1,0 +1,39 @@
+*{
+margin:0;
+padding:0;
+}
+
+.me{
+text-indent:15px;
+width:800px;
+height:140px;
+margin:auto;
+padding:30px;
+background-color:#dadada;
+color:red;
+border:1px solid #fff;
+}
+
+.study{
+text-indent:15px;
+width:800px;
+height:140px;
+margin:auto;
+padding:30px;
+background-color:#dadada;
+color:blue;
+border:1px solid #fff;
+}
+
+.play{
+text-indent:15px;
+width:800px;
+height:140px;
+margin:auto;
+padding:30px;
+background-color:#dadada;
+color:green;
+border:1px solid #fff;
+}
+
+

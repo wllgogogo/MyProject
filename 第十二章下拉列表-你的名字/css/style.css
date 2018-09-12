@@ -1,0 +1,93 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background-color:#000;
+}
+
+.banner{
+width:500px;
+height:30px;
+margin:100px auto 0;
+background:#000;
+}
+
+.list{
+list-style-type:none;
+width:500px;
+background-color:blue;
+}
+
+.clearfix:after{  /*清除子级浮动带来的影响 */
+  content:"";  /**/
+  display:block;/**/
+  clear:both;/**/
+ }
+
+.banner .list .on{
+float:left;
+position:relative;
+width:98px;
+height:30px;
+text-align:center;
+border:1px solid #fff;
+}
+.banner .list .on .up{
+list-style-type:none;
+}
+
+.banner .list .on h4{
+line-height:30px;
+color:white;
+cursor:pointer;
+}
+
+.up{
+list-style-type:none;
+max-height:0;
+overflow:hidden;
+margin-top:1px;
+transition:1s;
+}
+
+.up li{
+width:98px;
+line-height:30px;
+border:1px solid #ccc;
+background-color:gray;
+transition:.5s;
+cursor:pointer;
+}
+
+.banner .list .on:hover .up{
+max-height:200px;
+}
+
+.banner .list .on:after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+margin:auto;
+width:0;
+height:30px;
+background-color:rgba(0,255,255,0.4);
+transition:.7s;
+}
+
+.banner .list .on:hover:after{
+width:98px;
+}
+
+.banner .list .on:hover h4{
+color:yellow;
+}
+
+.banner .list .on:hover .up li{
+color:yellow;
+}
+
+

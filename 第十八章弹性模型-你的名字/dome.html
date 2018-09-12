@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+ <head> <!--用户是看不到的，给浏览器看的 -->
+  <meta charset="UTF-8"> <!--国际编码，字符的编码格式 -->
+  <!--网页三要素 title keywords description -->
+  <title>弹性盒模型-你的名字</title> <!--网页的标题 -->
+  <meta name="Keywords" content=""> <!--让搜索引擎找到我们的页面 -->
+  <meta name="Description" content=""> <!--网页的介绍 -->
+  <style type="text/css">
+  *{
+  margin:0;
+  padding:0;
+  }
+
+  ul{list-style-type:none;
+  }
+
+  body{
+  background-color:#eee;
+  }
+
+  .box{
+  width:600px;
+  margin:30px auto 0;
+  }
+
+  .container{
+  display:flex;
+  flex-flow:row wrap;
+  /*flex-wrap:wrap;*/
+  /*justify-content:space-between;*/
+  align-content:flex-start;
+  background-color:#fff;
+  }
+
+  .container .list{
+  display:flex;
+  flex-flow:row wrap;
+  align-content:center;
+  width:24%;
+  height:80px;
+  text-align:center;
+  flex-grow:1;
+  border:1px solid #ccc;
+  }
+
+  .container .list i.iconfont{
+  /*display:block;*/
+  /*flex-grow:1;*/
+  width:100%;
+  height:24%;
+  background:url("images/nav.png") no-repeat;
+  background-position-x:50%;
+  background-size:20px 245px;
+  }
+
+  .container .list:nth-child(1) i{background-position-y:-80px}
+  .container .list:nth-child(2) i{background-position-y:-100px}
+  .container .list:nth-child(3) i{background-position-y:-119px}
+  .container .list:nth-child(4) i{background-position-y:-139px}
+  .container .list:nth-child(5) i{background-position-y:-160px}
+  .container .list:nth-child(6) i{background-position-y:-179px}
+  .container .list:nth-child(7) i{background-position-y:-199px}
+  .container .list:nth-child(8) i{background-position-y:-217px}
+  .container .list:nth-child(9) i{background-position-y:0}
+  .container .list:nth-child(10) i{background-position-y:-19px}
+  .container .list:nth-child(11) i{background-position-y:-39px}
+  .container .list:nth-child(12) i{background-position-y:-60px}
+
+  .container .list p{
+  width:100%;
+  /*flex-grow:1;*/
+  color:#bbb;
+  font-size:14px;
+  /*height:40px;*/
+  }
+  </style>
+ </head>
+ <body>
+    <div class='box'>
+	  <ul class="container">
+	  	<li class="list"><i class="iconfont"></i><p>自由行</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>主题游</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>一日游</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>顶级游</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>酒店+景点</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>亲子·游行</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>外币兑换</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>加盟合作</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>低价拼单</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>机场停车</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>旅游巴士</p></li>
+	  	<li class="list"><i class="iconfont"></i><p>更多服务</p></li>
+	  </ul>
+	</div>
+ </body>
+</html>

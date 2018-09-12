@@ -1,0 +1,42 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background-color:#eee;
+}
+
+.show{
+width:250px;
+height:370px;
+padding:30px;
+margin:20px auto 0;
+background-color:#fff;
+}
+
+.show img{
+width:250px;
+height:280px;
+}
+.show ul{
+list-style-type:none;
+}
+
+.show ul li{
+font-size:10pt;
+padding:6px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

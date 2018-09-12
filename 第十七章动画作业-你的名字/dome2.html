@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head> <!--用户是看不到的，给浏览器看的 -->
+  <meta charset="UTF-8"> <!--国际编码，字符的编码格式 -->
+  <!--网页三要素 title keywords description -->
+  <title>小羊快跑-你的名字</title> <!--网页的标题 -->
+  <meta name="Keywords" content=""> <!--让搜索引擎找到我们的页面 -->
+  <meta name="Description" content=""> <!--网页的介绍 -->
+  <style type="text/css">
+	  *{
+	  margin:0;
+	  padding:0;
+	  }
+
+	  body{
+	  background-color:gray;
+	  }
+
+	  .sheep{
+	  width:162px;
+	  height:120px;
+	  background-color:gray;
+	  background-image:url('images/sheep.png');
+	  animation:walk 1s steps(7) infinite,run 4s linear infinite;
+	  }
+
+	  .sheep:nth-child(2){
+	  animation-duration:1s,4.5s;
+	  }
+
+	  .sheep:nth-child(3){
+	  animation-duration:1s,6s;
+	  }
+
+	  .sheep:nth-child(4){
+	  animation-duration:1s,7s;
+	  }
+
+	  .sheep:active{
+	  background-position-y:100%;/*实现低头动作*/
+	  animation-play-state:paused,paused;/*两个动画都暂停*/
+	  }
+
+	  @keyframes walk{
+		0%{
+		background-position-x:0%;
+		}
+
+		100%{
+		background-position-x:100%;
+		}
+	  }
+
+	  @keyframes run{
+		  0%{
+		  transform:translateX(1300px);
+		  }
+
+		  100%{
+		  transform:translateX(-200px);
+		  }
+	  }
+
+  </style>
+ </head>
+ <body>
+	  <div class="sheep"> </div>
+	  <div class="sheep"> </div>
+	  <div class="sheep"> </div>
+	  <div class="sheep"> </div>
+	  <div class="sheep"> </div>
+ </body>
+</html>

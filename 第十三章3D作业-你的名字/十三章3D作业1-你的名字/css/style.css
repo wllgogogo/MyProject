@@ -1,0 +1,94 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+perspective:2000px;/*摄像头*/
+}
+
+.focus{
+position:relative;
+width:400px;
+height:400px;
+margin:160px auto 0;
+background-color:green;
+transform-style:preserve-3d;/*让子元素在3D空间占据位置*/
+transition:4s;
+}
+
+.focus:hover{
+transform:rotateY(540deg);
+}
+
+.focus .face{
+position:absolute;
+top:0;
+left:0;
+width:400px;
+height:400px;
+box-shadow:0 0 10px 0 inset;
+transition:2s;
+}
+
+.focus .font{
+background:url('../image/1.jpg') no-repeat;
+background-size:cover;
+transform:translateZ(200px);
+}
+
+.focus .behind{
+background:url('../image/2.jpg') no-repeat;
+background-size:cover;
+transform:rotateY(-180deg) translateZ(200px);
+}
+
+.focus .top{
+background:url('../image/3.jpg') no-repeat;
+background-size:cover;
+transform:rotateX(90deg) translateZ(200px);
+}
+
+.focus .bottom{
+background:url('../image/4.jpg') no-repeat;
+background-size:cover;
+transform:rotateX(-90deg) translateZ(200px);
+}
+
+.focus .left{
+background:url('../image/5.jpg') no-repeat;
+background-size:cover;
+transform:rotateY(-90deg) translateZ(200px);
+}
+
+.focus .right{
+background:url('../image/6.jpg') no-repeat;
+background-size:cover;
+transform:rotateY(90deg) translateZ(200px);
+}
+.focus:hover .font{
+transform:translateZ(300px);
+}
+
+.focus:hover .behind{
+transform:rotateY(-180deg) translateZ(300px);
+}
+
+.focus:hover .top{
+transform:rotateX(90deg) translateZ(300px);
+}
+
+.focus:hover .bottom{
+transform:rotateX(-90deg) translateZ(300px);
+}
+
+.focus:hover .left{
+transform:rotateY(-90deg) translateZ(300px);
+}
+
+.focus:hover .right{
+transform:rotateY(90deg) translateZ(300px);
+}
+
+
+

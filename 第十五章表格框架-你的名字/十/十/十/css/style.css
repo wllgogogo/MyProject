@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding:0;
+  }
+
+  body{
+  background-color:#eee;
+  }
+
+.column{
+  margin:30px auto;
+  width:860px;
+  border-radius:10px;
+ }
+
+.column .header{
+ width:100%;
+ border:1px solid gray;
+ border-radius:10px;
+ }
+.column .header{
+list-style:none;
+}
+
+.column .header .content{
+list-style:none;
+}
+
+.column .header .content li{  /*浮动*/
+  float:left;
+  line-height:50px;
+  padding:0px 50px;
+  cursor:pointer;
+ }
+
+.clearfix:after{   /*清除浮动带来的影响*/
+ content:"";
+ display:block;
+ clear:both;
+ }
+
+.column .flower{  /*浮动*/
+ float:left;
+ border-radius:20px;
+ margin:15px;
+ border:1px solid gray;
+ }
+
+.column .flower img{
+ width:180px;
+ height:170px;
+ border-radius:90px;
+ border:1px solid #ff5722;
+ cursor:pointer;
+ }
+
+.column .flower p{
+ text-align:center;
+ color:blue;
+ cursor:pointer;
+ }
+
+.column .flower p:hover{
+ background:black;
+ color:#fff;
+ }
+
+.column .flower img:hover{
+ border:1px solid green;
+
+ }

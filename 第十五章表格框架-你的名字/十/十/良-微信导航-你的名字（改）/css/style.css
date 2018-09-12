@@ -1,0 +1,53 @@
+*{   /* 给所有类内外边距设置为0 */
+    margin:0; /**/
+    padding:0;/**/
+  }
+
+.nav{ /*给大盒子一个背景图片 高度不用写死 */
+    background-image:URL(../image/topbg.jpg);/**/
+ }
+
+.nav .content{ /*给导航栏盒子设置宽度并居中，高度不用写死 */
+  width:1000px;/**/
+  margin:auto;/**/
+
+  }
+
+.nav .clearfix:after{  /*清除子级浮动带来的影响 */
+  content:"";  /**/
+  display:block;/**/
+  clear:both;/**/
+ }
+
+.nav .content h1{  /*给微信logo设置浮动等属性 */
+ float:left;  /*向左浮动*/
+ background:url(../image/weixin.png) no-repeat center; /*背景图片，不平铺，背景居中 */
+ height:60px;  /*背景高度*/
+ width:140px;  /*背景宽度*/
+ cursor:pointer; /*鼠标移动出现小手*/
+ }
+
+.nav .content ul{  /*无序列表向右浮动*/
+ float:right;/**/
+ list-style:none;/*清除列表样式*/
+ }
+
+.nav .content ul li{ /*无序列表子级向左浮动*/
+ float:left;/**/
+ line-height:60px;/**/
+ padding:0 35px;/*上下内边距0，左右35px，用以拉宽布局*/
+ }
+
+#on{  /*给首页字段设置背景并居中*/
+ background:url(../image/btn2.png) no-repeat center;/**/
+ }
+
+.box{    /* 设置字体颜色以及鼠标移动会产生小手 */
+ color:#fff;/**/
+ cursor:pointer;/**/
+ }
+
+.box:hover{  /* 伪类，鼠标移动到字位置字会变红 */
+
+ color:red;
+ }
